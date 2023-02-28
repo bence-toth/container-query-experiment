@@ -2,7 +2,11 @@ import "./App.css";
 
 const App = () => (
   <div className="app-container">
-    <div className="left-container"></div>
+    <div className="left-container">
+      <div className="resize-marker">
+        Resize me <span className="arrow">↘</span>
+      </div>
+    </div>
     <div className="right-container">
       <article className="poem">
         <header>
