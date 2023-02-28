@@ -2,10 +2,12 @@
   padding: 20px;
   container-type: inline-size;
   container-name: poem-wrapper;
+  overflow: hidden;
+  overflow-y: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  height: 100%;
 }
 
 .poem {
@@ -15,6 +17,7 @@
   flex-direction: column;
   align-items: center;
   transition: font-size 0.25s;
+  margin-block: auto;
 }
 
 .poem header {
@@ -25,6 +28,7 @@
 .poem h2 {
   font-size: 1.75em;
   margin-bottom: 4px;
+  white-space: nowrap;
 }
 
 .poem .author {

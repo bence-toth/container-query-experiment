@@ -40,6 +40,7 @@
   pointer-events: none;
   text-transform: uppercase;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .resize-marker .arrow {
