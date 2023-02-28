@@ -2,9 +2,8 @@ import "./Resizable.css";
 
 const Resizable = () => (
   <div className="resizable">
-    <div className="resize-marker">
-      Resize me <span className="arrow">↘</span>
-    </div>
+    <div className="pattern"></div>
+    <div className="resize-marker">Resize me</div>
   </div>
 );
 

@@ -1,9 +1,17 @@
 .resizable {
+  container-type: inline-size;
+  container-name: resizable-wrapper;
   resize: horizontal;
   min-width: 20vw;
   max-width: calc(100vw - 360px);
-  overflow: auto;
   position: relative;
+  border-right: 2px solid #d4d4d480;
+  overflow: hidden;
+}
+
+.pattern {
+  width: 100%;
+  height: 100%;
   background: radial-gradient(
       transparent 34%,
       #d4d4d4 35%,
@@ -24,26 +32,29 @@
       #d4d4d480 45%,
       transparent 46%
     );
-  background-size: 3em 3em;
+  background-size: clamp(110px, calc(240px - 12cqw), 150px)
+    clamp(110px, calc(240px - 12cqw), 150px);
   background-color: #f2f2f2;
-  background-position: top right;
-  border-right: 2px solid #d4d4d480;
+  background-position: center;
+  box-shadow: -64px 0 64px -64px hsla(0deg 0% 0% / 50%) inset;
 }
 
 .resize-marker {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 40px;
+  padding: 0.85em 1.15em;
+  font-size: clamp(32px, 5cqw, 64px);
   font-family: "Annie Use Your Telescope", cursive;
-  font-size: 40px;
   pointer-events: none;
   text-transform: uppercase;
   font-weight: bold;
   white-space: nowrap;
+  line-height: 1;
 }
 
-.resize-marker .arrow {
+.resize-marker::after {
+  content: "↘";
   position: absolute;
   right: 10px;
   bottom: 0;
