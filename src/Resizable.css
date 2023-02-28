@@ -1,0 +1,49 @@
+.resizable {
+  resize: horizontal;
+  min-width: 20vw;
+  max-width: calc(100vw - 360px);
+  overflow: auto;
+  position: relative;
+  background: radial-gradient(
+      transparent 34%,
+      #d4d4d4 35%,
+      #d4d4d4 45%,
+      transparent 46%
+    ),
+    radial-gradient(
+      circle at left,
+      transparent 39%,
+      #d4d4d480 40%,
+      #d4d4d480 45%,
+      transparent 46%
+    ),
+    radial-gradient(
+      circle at right,
+      transparent 39%,
+      #d4d4d480 40%,
+      #d4d4d480 45%,
+      transparent 46%
+    );
+  background-size: 3em 3em;
+  background-color: #f2f2f2;
+  background-position: top right;
+  border-right: 2px solid #d4d4d480;
+}
+
+.resize-marker {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 40px;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size: 40px;
+  pointer-events: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.resize-marker .arrow {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
