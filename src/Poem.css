@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .poem {
@@ -13,6 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: font-size 0.25s;
 }
 
 .poem header {
@@ -42,6 +44,7 @@
 
 .poem .verses p {
   break-inside: avoid;
+  white-space: nowrap;
 }
 
 @container poem-wrapper (max-width: 1280px) {
