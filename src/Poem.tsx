@@ -15,7 +15,7 @@ const Poem = () => (
           <br />
           No more hard-coded, fixed breakpoints.
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;Now we can target containers with finesse.
+          &nbsp;&nbsp;&nbsp;&nbsp;Now we can target containers, rejoice!
         </p>
         <p>
           Design systems will be much more fluid
